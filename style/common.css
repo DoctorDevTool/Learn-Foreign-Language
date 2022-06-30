@@ -103,13 +103,26 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     margin: 0 15px;
 }
 
+@media screen and (min-width: 575px) {
+    .body-wrapper {
+        margin: 0 30px;
+    }
+}
+
 @media screen and (min-width: 767px) {
     .body-wrapper {
         margin: 0 35px;
     }
 }
-@media screen and (min-width: 1140) {
+
+@media screen and (min-width: 992px) {
     .body-wrapper {
-        margin: 0 45px;
+        margin: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1340) {
+    .body-wrapper {
+        margin: 0 130px;
     }
 }

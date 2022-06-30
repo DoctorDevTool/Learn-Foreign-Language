@@ -10,15 +10,18 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
         justify-items: center;
         align-items: center;
         .pricing__grid__item {
-            img {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .pricing__grid__item__img {
                 width: 100%;
                 height: auto;
                 object-fit: cover;
                 object-position: center center;
-
             }
             h3 {
                 font-size: 18px;
@@ -72,6 +75,37 @@
         .item-3 {
             grid-column: 1/2;
             grid-row: 3/4;
+        }
+    }
+}
+
+@media screen and (min-width: 575px) {
+    .pricing {
+        .pricing__h2 {
+            font-size: 30px;
+        }
+        .pricing__grid {
+            .pricing__grid__item {
+                .pricing__grid__item__img  {
+                    max-width: 291px;
+                }
+                h3 {
+                    font-size: 24px;
+                }
+                p {
+                    font-size: 14px;
+                }
+                .pricing__grid__item__price {
+                    width: 205px;
+                    height: 45px;
+                    .item__price {
+                        font-size: 22px;
+                    }
+                    .pricing__mounth {
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(pricing.css);
-@import url(contacts.css);
+@import url(contact-us.css);
+@import url(footer.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -14,6 +15,7 @@
     --about-us-numbers: #2A3246;
     --price-mounth: #546269;
     --price-mounth-bg: #EEEEEE;
+    --footer-line: #C4C4C4;
 }
 
 * {

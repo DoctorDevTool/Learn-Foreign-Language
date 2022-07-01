@@ -1,6 +1,9 @@
 .header {
+    display: flex;
+    flex-direction: column;
 }
 .logo {
+    font-size: 36px;
     &__text-fp {
        
     }
@@ -15,7 +18,7 @@
 .header-button {
 }
 .hero-img {
-
+width: 100% ;
    
 }
 .hero-info {

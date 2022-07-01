@@ -1,3 +1,11 @@
+.header {
+  display: flex;
+  flex-direction: column; }
 
+.logo {
+  font-size: 36px; }
+
+.hero-img {
+  width: 100%; }
 
 /*# sourceMappingURL=header.css.map */

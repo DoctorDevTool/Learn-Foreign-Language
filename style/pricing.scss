@@ -116,6 +116,7 @@
         & .pricing-grid {
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr;
+            column-gap: 15px;
             & .offering-item-1 {
                 grid-column: 1/2;
                 grid-row: 1/2;

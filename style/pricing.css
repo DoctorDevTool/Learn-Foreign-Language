@@ -86,7 +86,8 @@
     font-size: 30px; }
   .pricing .pricing-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr; }
+    grid-template-rows: 1fr;
+    column-gap: 15px; }
     .pricing .pricing-grid .offering-item-1 {
       grid-column: 1/2;
       grid-row: 1/2;

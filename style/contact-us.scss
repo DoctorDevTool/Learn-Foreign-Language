@@ -1,20 +1,20 @@
 .contact-us {
-    .contact-us__grid {
-        .contact-us__grid__h2 {
+    & .contact-us-grid {
+        & .contact-us__h2 {
             font-size: 24px;
             line-height: 80px;
             font-weight: 600;
             text-align: center;
             color: var(--base-black);
         }
-        .contact-us__grid__img {
+        & .contact-us__img {
             width: 100%;
             height: auto;
             margin: 38px 0;
             object-fit: cover;
             object-position: center center;
         }
-        .contact-us__grid__p {
+        & .contact-us__p {
             font-size: 14px;
             line-height: 21px;
             font-weight: 400;
@@ -22,11 +22,11 @@
             color: var(--font-color);
             margin-bottom: 31px;
         }
-        .contact-us__grid__form {
+        & .contact-us__form {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
-            .form-email {
+            & .form-email {
                 grid-column: 1/2;
                 grid-row: 1/2;
                 height: 50px;
@@ -35,7 +35,7 @@
                 padding-left: 41px;
                 margin-bottom: 17px;
             }
-            .form-submit {
+            & .form-submit {
                 grid-column: 1/2;
                 grid-row: 2/3;
                 height: 60px;
@@ -52,20 +52,20 @@
 
 @media screen and (min-width: 575px) {
     .contact-us {
-        .contact-us__grid {
+        & .contact-us-grid {
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            .contact-us__grid__h2 {
+            & .contact-us__h2 {
                 font-size: 30px;
             }
-            .contact-us__grid__img {
+            & .contact-us__img {
                 max-width: 358px;
             }
-            .contact-us__grid__p  {
+            & .contact-us__p {
                 font-size: 16px;
             }
-            .contact-us__grid__form {
+            & .contact-us__form {
                 grid-template-columns: 1.7fr 1fr;
                 grid-template-rows: 1fr;
                 align-items: center;
@@ -73,7 +73,7 @@
                 height: 60px;
                 border-radius: 10px;
                 border: 1px solid var(--font-color);
-                .form-email  {
+                & .form-email {
                     grid-column: 1/2;
                     grid-row: 1/2;
                     border: none;
@@ -83,11 +83,11 @@
                     padding-left: 25px;
                     overflow: hidden;
                 }
-                .form-submit {
+                & .form-submit {
                     grid-column: 2/3;
                     grid-row: 1/2;
                     border-radius: 10px;
-                    height: 59px;
+                    height: 59px; 
                 }
             }
         }

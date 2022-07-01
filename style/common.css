@@ -1,9 +1,28 @@
 @import url(header.css);
+@import url(pricing.css);
+@import url(contact-us.css);
+@import url(footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --base-black: #000000;
+    --base-wtite: #FFFFFF;
+    --logo: #939393;
+    --button-bg_font-h3: #263238;
+    --font-color: #8F95A5;
+    --skils-bg: #F5F5F5;
+    --about-us-numbers: #2A3246;
+    --price-mounth: #546269;
+    --price-mounth-bg: #EEEEEE;
+    --footer-line: #C4C4C4;
+}
 
 * {
     padding: 0;
     margin: 0;
     border: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 *,
@@ -75,17 +94,35 @@ ul li {
 img {
     vertical-align: top;
 }
-h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+
+
+
 .body-wrapper {
     margin: 0 15px;
 }
+
+@media screen and (min-width: 575px) {
+    .body-wrapper {
+        margin: 0 30px;
+    }
+}
+
 @media screen and (min-width: 767px) {
     .body-wrapper {
         margin: 0 35px;
     }
 }
-@media screen and (min-width: 1140) {
+
+@media screen and (min-width: 992px) {
     .body-wrapper {
-        margin: 0 45px;
+        margin: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1340) {
+    .body-wrapper {
+        margin: 0 130px;
     }
 }

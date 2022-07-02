@@ -1,11 +1,37 @@
-.header {
-  display: flex;
-  flex-direction: column; }
-
 .logo {
-  font-size: 36px; }
+  font-size: 24px;
+  margin: 36px 0 0 14px; }
+  .logo__text-sp {
+    color: var(--logo); }
 
-.hero-img {
+.navigation {
+  display: none; }
+
+.header-button {
+  display: none; }
+
+.hero-img-block__img {
   width: 100%; }
+
+.hero-info__name {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center; }
+.hero-info__bulb {
+  display: none; }
+.hero-info__thesis {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--font-color);
+  margin-top: 20px; }
+.hero-info__button {
+  background-color: var(--base-black);
+  width: 100%;
+  color: var(--base-white);
+  border-radius: 5px;
+  height: 60px;
+  margin: 35px 0 0 0; }
 
 /*# sourceMappingURL=header.css.map */

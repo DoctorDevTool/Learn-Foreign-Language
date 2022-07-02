@@ -1,36 +1,57 @@
 .header {
-    display: flex;
-    flex-direction: column;
 }
 .logo {
-    font-size: 36px;
+    font-size: 24px;
+    margin: 36px 0 0 14px;
     &__text-fp {
-       
     }
 
     &__text-sp {
+        color: var(--logo);
     }
 }
 .navigation {
+    display: none;
     &__link-item {
-}
+    }
 }
 .header-button {
+    display: none;
 }
-.hero-img {
-width: 100% ;
-   
+.hero-img-block {
+    &__img {
+        width: 100%;
+    }
 }
 .hero-info {
     &__name {
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
     }
 
     &__bulb {
+        display: none;
     }
 
     &__thesis {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        color: var(--font-color);
+        margin-top: 20px;
+    }
+
+    &__button-block {
     }
 
     &__button {
+        background-color: var(--base-black);
+        width: 100%;
+        color: var(--base-white);
+        border-radius: 5px;
+        height: 60px;
+        margin: 35px 0 0 0;
     }
 }

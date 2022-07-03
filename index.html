@@ -17,17 +17,23 @@
                     <h4 class="header__logo-fp">Brit<span class="header__logo-sp">lex</span></h4>
                 </div>
                 <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li><a class="menu__link" href="#">Home</a></li>
-                        <li><a class="menu__link" href="#">Skills</a></li>
-                        <li><a class="menu__link" href="#">About Us</a></li>
-                        <li><a class="menu__link" href="#">Pricing</a></li>
-                        <li><a class="menu__link" href="#">Contacts</a></li>
-                    </ul>
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a data-goto="" class="menu__link" href="#">Home</a></li>
+                            <li><a data-goto="" class="menu__link" href="#">Skills</a></li>
+                            <li><a data-goto="" class="menu__link" href="#">About Us</a></li>
+                            <li><a data-goto=".main__section-pricing" class="menu__link" href="#">Pricing</a></li>
+                            <li><a data-goto=".main__section-contacts" class="menu__link" href="#">Contacts</a></li>
+                        </ul>
+                        <div class="header__button-container">
+                            <button class="header__button">Let's talk</button>
+                        </div>
+                    </nav>
                 </nav>
-                <div class="header__button-container">
-                    <button class="header__button">Let's talk</button>
-                </div>
+               
             </div>
         </header>
         <div class="hero">
@@ -49,7 +55,7 @@
             </div>
         </div>
         <main class="main">
-            <section class="pricing">
+            <section class="pricing main__section-pricing">
                 <h2 class="pricing__h2">Pricing</h2>
                 <div class="pricing__grid">
                     <div class="pricing__grid__item item-1">
@@ -82,7 +88,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact-us">
+            <section class="contact-us main__section-contacts">
                 <div class="contact-us__grid">
                     <h2 class="contact-us__grid__h2">Contact Us</h2>
                     <img src="img/contacts-img-1.svg" alt="girl-run" class="contact-us__grid__img">

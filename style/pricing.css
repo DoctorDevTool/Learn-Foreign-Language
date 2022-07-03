@@ -120,5 +120,16 @@
     .pricing .offering .price {
       grid-column: 1/2;
       grid-row: 4/5; } }
+@media screen and (min-width: 992px) {
+  .pricing .pricing-h2 {
+    font-size: 36px; }
+  .pricing .offering .offering__h3 {
+    font-size: 22px; }
+  .pricing .offering .offering__p {
+    font-size: 16px; }
+  .pricing .offering .price .price__number {
+    font-size: 24px; }
+  .pricing .offering .price .price__mounth {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=pricing.css.map */

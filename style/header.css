@@ -56,6 +56,25 @@ body._lock {
   margin: 35px 0 0 0;
   font-size: 24px; }
 
+@media (min-width: 576px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 70px; }
+    .hero__img-container {
+      grid-column: 2/3;
+      grid-row: 1/2; }
+    .hero__main-info {
+      grid-column: 1/2; }
+
+  .main-info__name {
+    text-align: left; }
+  .main-info__thesis {
+    text-align: left; }
+  .main-info__button {
+    width: 70%;
+    height: 45px;
+    font-size: 18px; } }
 @media (min-width: 767px) {
   .menu__list {
     display: flex;

@@ -110,6 +110,54 @@ body._lock {
         font-size: 24px;
     }
 }
+@media (min-width: 576px) {
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 70px;
+
+		&__img-container {
+            grid-column: 2/3;
+            grid-row: 1/2;
+		}
+
+		&__img {
+		}
+
+		&__main-info {
+            grid-column: 1/2;
+		}
+}
+.main-info {
+
+		&__name {
+            text-align: left;
+		}
+
+		&__bulb-container {
+            //display: block;
+           
+		}
+
+		&__bulb {
+		}
+
+		&__thesis {
+            text-align: left;
+		}
+
+		&__button-container {
+            
+		}
+
+		&__button {
+            width: 70%;
+            height: 45px;
+            font-size: 18px;
+		}
+}
+
+}
 @media (min-width: 767px) {
     .menu__list {
         display: flex;

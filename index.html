@@ -12,72 +12,42 @@
 <body>
     <div class="body-wrapper">
         <header class="header">
-            <div class="logo">
-                <h4 class="logo__text-fp">Brit<span class="logo__text-sp">lex</span></h4>
-            </div>
-            <div class="mobile-nav">
-
-                <div class="b-nav">
-                      <ul>
-                          <li><a class="b-link b-link--active" href="#">Item 1</a></li>
-                          <li><a class="b-link" href="#">Item 2</a></li>
-                          <li><a class="b-link" href="#">Item 3</a></li>
-                          <li><a class="b-link" href="#">Item 4</a></li>
-                          
-            
+            <div class="header__container">
+                <div class="header__logo">
+                    <h4 class="header__logo-fp">Brit<span class="header__logo-sp">lex</span></h4>
+                </div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li><a class="menu__link" href="#">Home</a></li>
+                        <li><a class="menu__link" href="#">Skills</a></li>
+                        <li><a class="menu__link" href="#">About Us</a></li>
+                        <li><a class="menu__link" href="#">Pricing</a></li>
+                        <li><a class="menu__link" href="#">Contacts</a></li>
                     </ul>
-            
-                      <input type="text" class="mobile-search" placeholder="Enter keyword" name="">
-                      <input type="submit" class="mobile-search-btn" value="Search">
-            
+                </nav>
+                <div class="header__button-container">
+                    <button class="header__button">Let's talk</button>
                 </div>
-            
-                    <!-- Burger-Icon -->
-                    <div class="b-container">
-                      <div class="b-menu">
-                        <div class="b-bun b-bun--top"></div>
-                        <div class="b-bun b-bun--mid"></div>
-                        <div class="b-bun b-bun--bottom"></div>
-                      </div>
-            
-                      <!-- Burger-Brand -->
-                      <a href="#" class="b-brand"></a>
-                    </div>
-            
-              </div>           
-            <nav class="navigation">
-                <ul>
-                    <li class="navigation__link-item"><a href="#">Home</a></li>
-                    <li class="navigation__link-item"><a href="#">Skills</a></li>
-                    <li class="navigation__link-item"><a href="#">About Us</a></li>
-                    <li class="navigation__link-item"><a href="#">Pricing</a></li>
-                    <li class="navigation__link-item"><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
-            <div class="header-button">
-                <button>Let's talk</button>
             </div>
-            <div class="hero-img-block">
-                <img class ="hero-img-block__img" src="img/main-img.svg" alt="Girl listening languages">
+        </header>
+        <div class="hero">
+            <div class="hero__img-container">
+                <img class="hero__img" src="img/main-img.svg" alt="Girl listening languages">
             </div>
-            <div class="hero-info">
-                <h1 class="hero-info__name">Learn Any
+            <div class="hero__main-info main-info">
+                <h1 class="main-info__name">Learn Any
                     Foreign Language</h1>
-                <div class="hero-info__bulb">
-                    <img src="img/light-bulb.svg" alt="Light-bulb">
+                <div class="main-info__bulb-container">
+                    <img class="main-info__bulb" src="img/light-bulb.svg" alt="Light-bulb">
                 </div>
-                <article class="hero-info__thesis">With our teachers who write a program for each student, you will be
+                <article class="main-info__thesis">With our teachers who write a program for each student, you will be
                     able to
                     make your first sketch after the first lesson.</article>
-                <div class="hero-info__button-block">
-
-<!-- TODO change button name -->
-                    <button class="hero-info__button">Let's talk</button>
+                <div class="main-info__button-container">
+                    <button class="main-info__button">Get started</button>
                 </div>
             </div>
-
-
-        </header>
+        </div>
         <main class="main">
             <section class="pricing">
                 <h2 class="pricing__h2">Pricing</h2>

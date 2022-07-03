@@ -1,37 +1,80 @@
 .header {
-}
-.logo {
-    font-size: 24px;
-    margin: 36px 0 0 14px;
-    &__text-fp {
+    &__container {
+        max-width: 1200px;
+        margin: 0px auto;
+        margin-top: 20px;
+        display: flex;
+        padding: 0 30px;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    &__text-sp {
+    &__logo {
+        font-size: 24px;
+        // margin: 36px 0 0 14px;
+    }
+
+    &__logo-fp {
+    }
+
+    &__logo-sp {
         color: var(--logo);
     }
-}
-.navigation {
-    display: none;
-    &__link-item {
+
+    &__menu {
+        // display: none;
+    }
+
+    &__button-container {
+        // display: none;
+     
+    }
+
+    &__button {
+        border: 2px var(--base-black) solid;
+        border-radius: 5px;
+        background-color: var(--base-white);
+        padding: 10px 20px;
     }
 }
-.header-button {
-    display: none;
+.menu {
+    &__list {
+    }
+    &__list > li {
+        margin: 0px 0px 0px 20px;
+    }
+
+    &__link {
+        color: var(--base-black);
+        font-size: 16px;
+    }
+    &__link:hover {
+        text-decoration: underline;
+    }
 }
-.hero-img-block {
+.hero {
+    &__img-container {
+    }
+
     &__img {
         width: 100%;
     }
+
+    &__main-info {
+    }
 }
-.hero-info {
+.main-info {
     &__name {
         font-weight: 600;
         font-size: 24px;
         text-align: center;
     }
 
-    &__bulb {
+    &__bulb-container {
         display: none;
+    }
+
+    &__bulb {
     }
 
     &__thesis {
@@ -43,7 +86,7 @@
         margin-top: 20px;
     }
 
-    &__button-block {
+    &__button-container {
     }
 
     &__button {
@@ -53,5 +96,15 @@
         border-radius: 5px;
         height: 60px;
         margin: 35px 0 0 0;
+        font-size: 24px;
+    }
+}
+@media (min-width: 767px) {
+    .menu__list {
+        display: flex;
+        align-items: center;
+    }
+    .menu__list > li {
+        padding: 10px 0;
     }
 }

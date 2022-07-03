@@ -159,3 +159,21 @@
         }
     }
 }
+
+@media screen and (min-width: 1140px) {
+    .contact-us {
+        & .contact-us-grid  {
+            & .contact-us__h2 {
+                font-size: 36px;
+            }
+            & .contact-us__p {
+                font-size: 16px;
+            }
+            & .contact-us__form {
+                & .form-submit {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

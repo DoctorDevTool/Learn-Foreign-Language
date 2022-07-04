@@ -13,23 +13,10 @@ body._lock {
 
     &__logo {
         font-size: 24px;
-        // margin: 36px 0 0 14px;
     }
 
-    &__logo-fp {
-    }
-
-    &__logo-sp {
+    & &__logo-sp {
         color: var(--logo);
-    }
-
-    &__menu {
-        // display: none;
-    }
-
-    &__button-container {
-        
-        // display: none;
     }
 
     &__button {
@@ -47,9 +34,6 @@ body._lock {
         display: none;
     }
 
-    &__list {
-       
-    }
     &__list > li {
         margin: 0px 0px 0px 20px;
     }
@@ -63,14 +47,8 @@ body._lock {
     }
 }
 .hero {
-    &__img-container {
-    }
-
     &__img {
         width: 100%;
-    }
-
-    &__main-info {
     }
 }
 .main-info {
@@ -84,9 +62,6 @@ body._lock {
         display: none;
     }
 
-    &__bulb {
-    }
-
     &__thesis {
         font-weight: 400;
         font-size: 14px;
@@ -94,9 +69,6 @@ body._lock {
         text-align: center;
         color: var(--font-color);
         margin-top: 20px;
-    }
-
-    &__button-container {
     }
 
     &__button {
@@ -115,52 +87,40 @@ body._lock {
         grid-template-columns: 1fr 1fr;
         margin-top: 70px;
 
-		&__img-container {
+        &__img-container {
             grid-column: 2/3;
             grid-row: 1/2;
-		}
+        }
 
-		&__img {
-		}
-
-		&__main-info {
+        &__main-info {
             grid-column: 1/2;
-		}
-}
-.main-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-		&__name {
+        }
+    }
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__name {
             text-align: left;
             font-size: 36px;
             line-height: 45px;
-		}
+        }
 
-		&__bulb-container {
+        &__bulb-container {
             display: block;
-           
-		}
+        }
 
-		&__bulb {
-		}
-
-		&__thesis {
+        &__thesis {
             text-align: left;
             font-size: 16px;
-		}
+        }
 
-		&__button-container {
-            
-		}
-
-		&__button {
+        &__button {
             width: 70%;
             height: 45px;
             font-size: 18px;
-		}
-}
-
+        }
+    }
 }
 @media (min-width: 767px) {
     .menu__list {
@@ -169,6 +129,12 @@ body._lock {
     }
     .menu__list > li {
         padding: 10px 0;
+    }
+
+    .header {
+        &__button-container {
+            margin-left: 20px;
+        }
     }
 }
 @media (max-width: 767px) {

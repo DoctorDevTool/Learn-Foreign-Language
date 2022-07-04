@@ -1,77 +1,128 @@
-.contact-us .contact-us__grid .contact-us__grid__h2 {
-  font-size: 24px;
-  line-height: 80px;
-  font-weight: 600;
-  text-align: center;
-  color: var(--base-black); }
-.contact-us .contact-us__grid .contact-us__grid__img {
-  width: 100%;
-  height: auto;
-  margin: 38px 0;
-  object-fit: cover;
-  object-position: center center; }
-.contact-us .contact-us__grid .contact-us__grid__p {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-  color: var(--font-color);
-  margin-bottom: 31px; }
-.contact-us .contact-us__grid .contact-us__grid__form {
+.contact-us .contact-us-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr; }
-  .contact-us .contact-us__grid .contact-us__grid__form .form-email {
+  grid-template-rows: 1fr auto 1fr 1fr; }
+  .contact-us .contact-us-grid .contact-us__h2 {
     grid-column: 1/2;
     grid-row: 1/2;
-    height: 50px;
-    border: 1px solid var(--font-color);
-    border-radius: 5px;
-    padding-left: 41px;
-    margin-bottom: 17px; }
-  .contact-us .contact-us__grid .contact-us__grid__form .form-submit {
+    font-size: 24px;
+    line-height: 80px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--base-black); }
+  .contact-us .contact-us-grid .contact-us__img {
     grid-column: 1/2;
     grid-row: 2/3;
-    height: 60px;
-    border-radius: 5px;
-    background-color: var(--button-bg_font-h3);
+    width: 100%;
+    height: auto;
+    margin: 38px 0;
+    object-fit: cover;
+    object-position: center center; }
+  .contact-us .contact-us-grid .contact-us__p {
+    grid-column: 1/2;
+    grid-row: 3/4;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 500;
-    color: var(--base-wtite); }
+    font-weight: 400;
+    text-align: center;
+    color: var(--font-color);
+    margin-bottom: 31px; }
+  .contact-us .contact-us-grid .contact-us__form {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    display: flex;
+    flex-flow: column nowrap; }
+    .contact-us .contact-us-grid .contact-us__form .form-email {
+      height: 50px;
+      border: 1px solid var(--font-color);
+      border-radius: 5px;
+      padding-left: 41px;
+      margin-bottom: 17px; }
+    .contact-us .contact-us-grid .contact-us__form .form-submit {
+      height: 60px;
+      border-radius: 5px;
+      background-color: var(--button-bg_font-h3);
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+      color: var(--base-wtite); }
 
 @media screen and (min-width: 575px) {
-  .contact-us .contact-us__grid {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center; }
-    .contact-us .contact-us__grid .contact-us__grid__h2 {
-      font-size: 30px; }
-    .contact-us .contact-us__grid .contact-us__grid__img {
-      max-width: 358px; }
-    .contact-us .contact-us__grid .contact-us__grid__p {
-      font-size: 16px; }
-    .contact-us .contact-us__grid .contact-us__grid__form {
-      grid-template-columns: 1.7fr 1fr;
-      grid-template-rows: 1fr;
-      align-items: center;
-      width: 100%;
-      height: 60px;
+  .contact-us .contact-us-grid .contact-us__h2 {
+    font-size: 30px; }
+  .contact-us .contact-us-grid .contact-us__img {
+    max-width: 358px;
+    justify-self: center; }
+  .contact-us .contact-us-grid .contact-us__p {
+    font-size: 16px; }
+  .contact-us .contact-us-grid .contact-us__form {
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid var(--font-color); }
+    .contact-us .contact-us-grid .contact-us__form .form-email {
+      width: 65%;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+      padding: 0;
+      padding-left: 25px;
+      overflow: hidden; }
+    .contact-us .contact-us-grid .contact-us__form .form-submit {
+      width: 35%;
       border-radius: 10px;
-      border: 1px solid var(--font-color); }
-      .contact-us .contact-us__grid .contact-us__grid__form .form-email {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        border: none;
-        border-radius: 0;
-        margin: 0;
-        padding: 0;
-        padding-left: 25px;
-        overflow: hidden; }
-      .contact-us .contact-us__grid .contact-us__grid__form .form-submit {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        border-radius: 10px;
-        height: 59px; } }
+      height: 59px; } }
+@media screen and (min-width: 767px) {
+  .contact-us .contact-us-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 36px; }
+    .contact-us .contact-us-grid .contact-us__img {
+      grid-column: 1/2;
+      grid-row: 1/4;
+      align-self: center;
+      margin: 0; }
+    .contact-us .contact-us-grid .contact-us__h2 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      text-align: start; }
+    .contact-us .contact-us-grid .contact-us__p {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      text-align: start; }
+    .contact-us .contact-us-grid .contact-us__form {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      border: none;
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between; }
+      .contact-us .contact-us-grid .contact-us__form .form-email {
+        width: 65%;
+        height: 50px;
+        border-radius: 5px;
+        border: 1px solid var(--font-color);
+        margin-right: 6px; }
+      .contact-us .contact-us-grid .contact-us__form .form-submit {
+        width: 35%;
+        height: 50px; } }
+@media screen and (min-width: 992px) {
+  .contact-us .contact-us-grid .contact-us__h2 {
+    font-size: 36px; }
+  .contact-us .contact-us-grid .contact-us__p {
+    font-size: 16px;
+    width: 80%; }
+  .contact-us .contact-us-grid .contact-us__form .form-email {
+    margin-right: 14px; } }
+@media screen and (min-width: 1140px) {
+  .contact-us .contact-us-grid .contact-us__h2 {
+    font-size: 36px; }
+  .contact-us .contact-us-grid .contact-us__p {
+    font-size: 16px; }
+  .contact-us .contact-us-grid .contact-us__form .form-submit {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=contact-us.css.map */

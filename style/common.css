@@ -122,8 +122,9 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     }
 }
 
-@media screen and (min-width: 1340) {
+@media screen and (min-width: 1140px) {
     .body-wrapper {
         margin: 0 130px;
+        max-width: 1600px;
     }
 }

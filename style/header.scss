@@ -129,13 +129,17 @@ body._lock {
 		}
 }
 .main-info {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 		&__name {
             text-align: left;
+            font-size: 36px;
+            line-height: 45px;
 		}
 
 		&__bulb-container {
-            //display: block;
+            display: block;
            
 		}
 
@@ -144,6 +148,7 @@ body._lock {
 
 		&__thesis {
             text-align: left;
+            font-size: 16px;
 		}
 
 		&__button-container {

@@ -67,14 +67,23 @@ body._lock {
     .hero__main-info {
       grid-column: 1/2; }
 
-  .main-info__name {
-    text-align: left; }
-  .main-info__thesis {
-    text-align: left; }
-  .main-info__button {
-    width: 70%;
-    height: 45px;
-    font-size: 18px; } }
+  .main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .main-info__name {
+      text-align: left;
+      font-size: 36px;
+      line-height: 45px; }
+    .main-info__bulb-container {
+      display: block; }
+    .main-info__thesis {
+      text-align: left;
+      font-size: 16px; }
+    .main-info__button {
+      width: 70%;
+      height: 45px;
+      font-size: 18px; } }
 @media (min-width: 767px) {
   .menu__list {
     display: flex;
